@@ -1,0 +1,44 @@
+Ponteiros
+
+sintaxe:
+	tipo *nome_ponteiro
+
+		>tipo : é o tipo de dado da variável cujo endereço o ponteiro armazena.
+
+		>*nome_ponteiro : O nome da variável ponteiro.
+
+Alocação de Dinâmica
+Operador:
+	sizeof();
+	-> tamanho de:
+	ele retorna o valor em bytes.
+
+	Funções:
+		MALLOC;
+		-> memory allocation
+
+			A função malloc() serve para alocar memória.
+		
+			Estrutura:
+                		void *malloc (unsigned int num);
+			Curiosidade:
+				size_t: número inteiro positivo
+		CALLOC;
+			A função calloc() também serve para alocar memória, mas possui um protótipo um pouco diferente:
+			
+			Estrutura:
+				void *calloc (unsigned int num, unsigned int size);
+
+		REALLOC;
+			A função realloc() serve para realocar memória.
+
+			Estrutura:
+				void *realloc (void *ptr, unsigned int num);
+
+		FREE;
+		Serve para devolver(desalocar) a memória que foi usada.
+		
+		Quando alocamos memória dinamicamente é necessário que nós a liberemos quando ela não for mais necessária. 
+		
+		Estrutura:
+	                void free (void *p);

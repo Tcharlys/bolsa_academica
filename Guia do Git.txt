@@ -22,3 +22,9 @@ Para salvar as alterações no repositório local:
 Para ver um relatório das alterações no repositósio e quem fez os Commits:
 
 -> git log
+
+Como faz pra saber em que Branch a gente está modificando o código?
+
+-> git branch
+
+Este comando lista os Branchs e o asterisco (*) indica em qual Branch estamos atualmente.

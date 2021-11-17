@@ -1,0 +1,24 @@
+Na pasta onde deseja criar um projetos ou adicionar códigos:
+-> git init
+
+Crie um arquivo qualquer.
+
+Para que o git monitore as alterações ou salve.
+
+-> giit add "nome do arquivo"
+
+ou se for mais de um arquivo:
+
+-> git add -A
+
+Para verificar a status dos arquivos:
+
+-> git status
+
+Para salvar as alterações no repositório local:
+
+-> git commit -m "mensagem"
+
+Para ver um relatório das alterações no repositósio e quem fez os Commits:
+
+-> git log

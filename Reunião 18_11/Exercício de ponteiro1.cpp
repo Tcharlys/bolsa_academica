@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <locale.h>
 
-/* 2. Escreva um programa que contenha duas variaveis inteiras. Compare seus enderec¸os e ´
-exiba o maior enderec¸o. */
+/* 2. Escreva um programa que contenha duas variaveis inteiras. Compare seus endereços e
+exiba o maior endereço. */
 
 int main(){
 	
@@ -12,9 +12,8 @@ int main(){
 	int x = 6;
     int y = 10;
 
-
-printf("%p\n", &x);
-printf("%p\n", &y);
+	printf("%p\n", &x);
+	printf("%p\n", &y);
 
     if (&x > &y){
 	    printf ("A variavel x tem o maior endereco de memoria\n");

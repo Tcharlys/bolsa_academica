@@ -2,30 +2,34 @@
 #include <stdlib.h>
 #include <locale.h>
 
-/* 1. Escreva um programa que declare um inteiro, um real e um char, e ponteiros para inteiro, real, e char. Associe as variaveis aos ponteiros (use &). Modifique os valores de ´
-cada variavel usando os ponteiros. Imprima os valores das vari ´ aveis antes e ap ´ os a ´
-modificac¸ao. */ 
+/* 1. Escreva um programa que declare um inteiro, um real e um char, e ponteiros para inteiro, real, e char.
+Associe as varveis aos ponteiros (use &). Modifique os valores de cada variavel usando os ponteiros.
+Imprima os valores das variáveis antes e após da modificação. */ 
 
 int main(){
 	
 	setlocale(LC_ALL,"");
 	
 	int i = 3;
-    int *ponteiroint = &i;
+    int *ponteiroInt = &i;
     
     float f = 10.78;
-    float *ponteirofloat = &f;
+    float *ponteiroFloat = &f;
     
     char c ='c';
-    char  *ponteirochar = &c;
+    char  *ponteiroChar = &c;
     
-   *ponteiroint = 23;
-   *ponteirofloat = 0.67;
-   *ponteirochar = 'g';
+	printf("Inteiro %i\n", *ponteiroInt);
+    printf("Real %f\n",  *ponteiroFloat);
+    printf("Char %c\n\n", *ponteiroChar);
+	
+   *ponteiroInt = 23;
+   *ponteiroFloat = 0.67;
+   *ponteiroChar = 'g';
 
-    printf("Inteiro %i\n", *ponteiroint);
-    printf("Real %f\n",  *ponteirofloat);
-    printf("Char %c\n", *ponteirochar);
+    printf("Inteiro %i\n", *ponteiroInt);
+    printf("Real %f\n",  *ponteiroFloat);
+    printf("Char %c\n\n", *ponteiroChar);
 	
 	system("pause");
 	return(0);
